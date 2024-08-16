@@ -1,0 +1,131 @@
+body {
+  font-size: 15px;
+  margin: 20px;
+}
+
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 55px;
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 100%;
+}
+
+.topic-text {
+  font-size: 1.8rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.topic-text span {
+  color: hsl(209, 33%, 12%);
+  font-weight: bold;
+}
+
+.text {
+  font-size: 1rem;
+  color: hsl(0, 0%, 59%);
+  font-weight: 600;
+  margin-bottom: 25px;
+}
+
+.input-and-button {
+  display: flex;
+  gap: 13px;
+  margin-bottom: 65px;
+}
+
+.input-container {
+  display: flex;
+  position: relative;
+}
+
+.error-icon {
+  display: none;
+  width: 18px;
+  position: absolute;
+  right: 19px;
+  bottom: 35px;
+}
+
+
+input {
+  width: 320px;
+  padding: 10px 20px;
+  border: 1px solid hsl(0, 5%, 87%);
+  border-radius: 30px;
+}
+/* error message */
+.error {
+  display: none;
+  color: hsl(354, 100%, 66%);
+  font-size: 13px;
+  font-style: italic;
+  margin-left: 28px;
+  margin-top: 3px;
+}
+
+input::placeholder {
+  color: hsl(221, 15%, 80%);
+}
+
+button {
+  width: 100%;
+  background-color: hsl(223, 87%, 63%);
+  color: white;
+  font-weight: 600;
+  padding: 10px 50px;
+  border: none;
+  border-radius: 30px;
+}
+
+button:hover {
+  background-color: hsl(223, 80%, 73%);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.image-container {
+  width: 500px;
+}
+
+.image-container img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.copyright-text {
+  color: hsl(0, 0%, 59%);
+  font-size: 14px;
+}
+
+@media (max-width: 500px) {
+  .input-and-button  {
+    flex-direction: column;
+  }
+
+  input {
+    width: 300px;
+    padding: 7px 25px;
+  }
+
+  button {
+    padding: 7px 40px;
+  }
+
+  .image-container {
+    width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .error-icon {
+    width: 15px;
+  }
+}
+
